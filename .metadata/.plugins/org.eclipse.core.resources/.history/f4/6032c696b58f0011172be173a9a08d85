@@ -1,0 +1,1 @@
+import{i as e,r as t}from"./axiosConfig-7aBCpyz9.js";var n=({deliveryOption:n,shippingAddress:r,storeLocation:i})=>t.post(`${e.ORDERS}/checkout`,{deliveryOption:n,shippingAddress:r,storeLocation:i}),r=()=>t.get(e.ORDERS),i=n=>t.get(`${e.ORDERS}/${n}`),a=n=>t.get(`${e.ORDERS}/${n}/invoice/pdf`,{responseType:`blob`});export{r as i,a as n,i as r,n as t};

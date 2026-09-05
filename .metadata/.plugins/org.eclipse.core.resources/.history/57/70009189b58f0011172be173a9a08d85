@@ -1,0 +1,26 @@
+package com.emart.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class ReactController {
+
+    @RequestMapping({
+            "/login",
+            "/register",
+            "/forgot-password",
+            "/reset-password",
+            "/profile",
+            "/edit-profile",
+            "/change-password",
+            "/checkout",
+            "/payment",
+            "/orders/**",
+            "/admin/**",
+            "/contact"
+    })
+    public String index() {
+        return "forward:/index.html";
+    }
+}

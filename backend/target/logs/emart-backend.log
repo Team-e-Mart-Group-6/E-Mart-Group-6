@@ -1,0 +1,499 @@
+2026-08-04T09:12:33.350+05:30  INFO 19724 --- [EmartCategoryMaster] [main] c.emart.EmartCategoryMasterApplication   : Starting EmartCategoryMasterApplication v0.0.1-SNAPSHOT using Java 25.0.2 with PID 19724 (C:\Users\ADMIN\OneDrive\Documents\Final\backend\target\EmartCategoryMaster-0.0.1-SNAPSHOT.jar started by ADMIN in C:\Users\ADMIN\OneDrive\Documents\Final\backend\target)
+2026-08-04T09:12:33.355+05:30 DEBUG 19724 --- [EmartCategoryMaster] [main] c.emart.EmartCategoryMasterApplication   : Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-08-04T09:12:33.356+05:30  INFO 19724 --- [EmartCategoryMaster] [main] c.emart.EmartCategoryMasterApplication   : The following 1 profile is active: "dev"
+2026-08-04T09:12:36.128+05:30  INFO 19724 --- [EmartCategoryMaster] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-04T09:12:36.320+05:30  INFO 19724 --- [EmartCategoryMaster] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 165 ms. Found 15 JPA repository interfaces.
+2026-08-04T09:12:37.996+05:30  INFO 19724 --- [EmartCategoryMaster] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-04T09:12:38.029+05:30  INFO 19724 --- [EmartCategoryMaster] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-04T09:12:38.030+05:30  INFO 19724 --- [EmartCategoryMaster] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-04T09:12:38.092+05:30  INFO 19724 --- [EmartCategoryMaster] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4644 ms
+2026-08-04T09:12:38.509+05:30  INFO 19724 --- [EmartCategoryMaster] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-04T09:12:38.632+05:30  INFO 19724 --- [EmartCategoryMaster] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-04T09:12:39.686+05:30  INFO 19724 --- [EmartCategoryMaster] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-04T09:12:39.779+05:30  INFO 19724 --- [EmartCategoryMaster] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-04T09:12:40.615+05:30  INFO 19724 --- [EmartCategoryMaster] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@654db80b
+2026-08-04T09:12:40.619+05:30  INFO 19724 --- [EmartCategoryMaster] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-04T09:12:40.801+05:30  INFO 19724 --- [EmartCategoryMaster] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/emart?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: emart/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-04T09:12:42.630+05:30  INFO 19724 --- [EmartCategoryMaster] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-04T09:12:42.642+05:30  INFO 19724 --- [EmartCategoryMaster] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-04T09:12:42.764+05:30  INFO 19724 --- [EmartCategoryMaster] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-04T09:12:43.126+05:30 DEBUG 19724 --- [EmartCategoryMaster] [main] c.e.a.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2026-08-04T09:12:44.538+05:30  INFO 19724 --- [EmartCategoryMaster] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-08-04T09:12:44.539+05:30  WARN 19724 --- [EmartCategoryMaster] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-08-04T09:12:45.728+05:30  WARN 19724 --- [EmartCategoryMaster] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-04T09:12:46.746+05:30  INFO 19724 --- [EmartCategoryMaster] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-08-04T09:12:47.218+05:30  INFO 19724 --- [EmartCategoryMaster] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-04T09:12:47.257+05:30  INFO 19724 --- [EmartCategoryMaster] [main] c.emart.EmartCategoryMasterApplication   : Started EmartCategoryMasterApplication in 14.746 seconds (process running for 15.787)
+2026-08-04T09:12:47.393+05:30 DEBUG 19724 --- [EmartCategoryMaster] [main] org.hibernate.SQL                        : 
+    select
+        p1_0.prod_id,
+        p1_0.brand,
+        p1_0.cardholder_price,
+        p1_0.cash_required,
+        p1_0.catmaster_id,
+        p1_0.created_at,
+        p1_0.display_type,
+        p1_0.prod_long_desc,
+        p1_0.mrp_price,
+        p1_0.offer_type,
+        p1_0.on_sale,
+        p1_0.points_required,
+        p1_0.points_to_be_redeemed,
+        p1_0.prod_image_path,
+        p1_0.prod_name,
+        p1_0.sale_end_date,
+        p1_0.sale_price,
+        p1_0.prod_short_desc,
+        p1_0.status,
+        p1_0.stock,
+        p1_0.subcat_master_id,
+        p1_0.updated_at 
+    from
+        product_master p1_0
+2026-08-04T09:12:47.520+05:30 DEBUG 19724 --- [EmartCategoryMaster] [main] org.hibernate.SQL                        : 
+    select
+        p1_0.prod_id,
+        p1_0.brand,
+        p1_0.cardholder_price,
+        p1_0.cash_required,
+        p1_0.catmaster_id,
+        p1_0.created_at,
+        p1_0.display_type,
+        p1_0.prod_long_desc,
+        p1_0.mrp_price,
+        p1_0.offer_type,
+        p1_0.on_sale,
+        p1_0.points_required,
+        p1_0.points_to_be_redeemed,
+        p1_0.prod_image_path,
+        p1_0.prod_name,
+        p1_0.sale_end_date,
+        p1_0.sale_price,
+        p1_0.prod_short_desc,
+        p1_0.status,
+        p1_0.stock,
+        p1_0.subcat_master_id,
+        p1_0.updated_at 
+    from
+        product_master p1_0 
+    where
+        p1_0.prod_id=?
+2026-08-04T09:12:47.534+05:30 DEBUG 19724 --- [EmartCategoryMaster] [main] org.hibernate.SQL                        : 
+    select
+        p1_0.prod_id,
+        p1_0.brand,
+        p1_0.cardholder_price,
+        p1_0.cash_required,
+        p1_0.catmaster_id,
+        p1_0.created_at,
+        p1_0.display_type,
+        p1_0.prod_long_desc,
+        p1_0.mrp_price,
+        p1_0.offer_type,
+        p1_0.on_sale,
+        p1_0.points_required,
+        p1_0.points_to_be_redeemed,
+        p1_0.prod_image_path,
+        p1_0.prod_name,
+        p1_0.sale_end_date,
+        p1_0.sale_price,
+        p1_0.prod_short_desc,
+        p1_0.status,
+        p1_0.stock,
+        p1_0.subcat_master_id,
+        p1_0.updated_at 
+    from
+        product_master p1_0 
+    where
+        p1_0.prod_id=?
+2026-08-04T09:12:47.538+05:30 DEBUG 19724 --- [EmartCategoryMaster] [main] org.hibernate.SQL                        : 
+    select
+        p1_0.prod_id,
+        p1_0.brand,
+        p1_0.cardholder_price,
+        p1_0.cash_required,
+        p1_0.catmaster_id,
+        p1_0.created_at,
+        p1_0.display_type,
+        p1_0.prod_long_desc,
+        p1_0.mrp_price,
+        p1_0.offer_type,
+        p1_0.on_sale,
+        p1_0.points_required,
+        p1_0.points_to_be_redeemed,
+        p1_0.prod_image_path,
+        p1_0.prod_name,
+        p1_0.sale_end_date,
+        p1_0.sale_price,
+        p1_0.prod_short_desc,
+        p1_0.status,
+        p1_0.stock,
+        p1_0.subcat_master_id,
+        p1_0.updated_at 
+    from
+        product_master p1_0 
+    where
+        p1_0.prod_id=?
+2026-08-04T09:12:47.543+05:30 DEBUG 19724 --- [EmartCategoryMaster] [main] org.hibernate.SQL                        : 
+    select
+        p1_0.prod_id,
+        p1_0.brand,
+        p1_0.cardholder_price,
+        p1_0.cash_required,
+        p1_0.catmaster_id,
+        p1_0.created_at,
+        p1_0.display_type,
+        p1_0.prod_long_desc,
+        p1_0.mrp_price,
+        p1_0.offer_type,
+        p1_0.on_sale,
+        p1_0.points_required,
+        p1_0.points_to_be_redeemed,
+        p1_0.prod_image_path,
+        p1_0.prod_name,
+        p1_0.sale_end_date,
+        p1_0.sale_price,
+        p1_0.prod_short_desc,
+        p1_0.status,
+        p1_0.stock,
+        p1_0.subcat_master_id,
+        p1_0.updated_at 
+    from
+        product_master p1_0 
+    where
+        p1_0.prod_id=?
+2026-08-04T09:12:47.549+05:30 DEBUG 19724 --- [EmartCategoryMaster] [main] org.hibernate.SQL                        : 
+    select
+        p1_0.prod_id,
+        p1_0.brand,
+        p1_0.cardholder_price,
+        p1_0.cash_required,
+        p1_0.catmaster_id,
+        p1_0.created_at,
+        p1_0.display_type,
+        p1_0.prod_long_desc,
+        p1_0.mrp_price,
+        p1_0.offer_type,
+        p1_0.on_sale,
+        p1_0.points_required,
+        p1_0.points_to_be_redeemed,
+        p1_0.prod_image_path,
+        p1_0.prod_name,
+        p1_0.sale_end_date,
+        p1_0.sale_price,
+        p1_0.prod_short_desc,
+        p1_0.status,
+        p1_0.stock,
+        p1_0.subcat_master_id,
+        p1_0.updated_at 
+    from
+        product_master p1_0 
+    where
+        p1_0.prod_id=?
+2026-08-04T09:12:47.555+05:30 DEBUG 19724 --- [EmartCategoryMaster] [main] org.hibernate.SQL                        : 
+    select
+        p1_0.prod_id,
+        p1_0.brand,
+        p1_0.cardholder_price,
+        p1_0.cash_required,
+        p1_0.catmaster_id,
+        p1_0.created_at,
+        p1_0.display_type,
+        p1_0.prod_long_desc,
+        p1_0.mrp_price,
+        p1_0.offer_type,
+        p1_0.on_sale,
+        p1_0.points_required,
+        p1_0.points_to_be_redeemed,
+        p1_0.prod_image_path,
+        p1_0.prod_name,
+        p1_0.sale_end_date,
+        p1_0.sale_price,
+        p1_0.prod_short_desc,
+        p1_0.status,
+        p1_0.stock,
+        p1_0.subcat_master_id,
+        p1_0.updated_at 
+    from
+        product_master p1_0 
+    where
+        p1_0.prod_id=?
+2026-08-04T09:12:47.560+05:30 DEBUG 19724 --- [EmartCategoryMaster] [main] org.hibernate.SQL                        : 
+    select
+        p1_0.prod_id,
+        p1_0.brand,
+        p1_0.cardholder_price,
+        p1_0.cash_required,
+        p1_0.catmaster_id,
+        p1_0.created_at,
+        p1_0.display_type,
+        p1_0.prod_long_desc,
+        p1_0.mrp_price,
+        p1_0.offer_type,
+        p1_0.on_sale,
+        p1_0.points_required,
+        p1_0.points_to_be_redeemed,
+        p1_0.prod_image_path,
+        p1_0.prod_name,
+        p1_0.sale_end_date,
+        p1_0.sale_price,
+        p1_0.prod_short_desc,
+        p1_0.status,
+        p1_0.stock,
+        p1_0.subcat_master_id,
+        p1_0.updated_at 
+    from
+        product_master p1_0 
+    where
+        p1_0.prod_id=?
+2026-08-04T09:12:47.567+05:30 DEBUG 19724 --- [EmartCategoryMaster] [main] org.hibernate.SQL                        : 
+    select
+        p1_0.prod_id,
+        p1_0.brand,
+        p1_0.cardholder_price,
+        p1_0.cash_required,
+        p1_0.catmaster_id,
+        p1_0.created_at,
+        p1_0.display_type,
+        p1_0.prod_long_desc,
+        p1_0.mrp_price,
+        p1_0.offer_type,
+        p1_0.on_sale,
+        p1_0.points_required,
+        p1_0.points_to_be_redeemed,
+        p1_0.prod_image_path,
+        p1_0.prod_name,
+        p1_0.sale_end_date,
+        p1_0.sale_price,
+        p1_0.prod_short_desc,
+        p1_0.status,
+        p1_0.stock,
+        p1_0.subcat_master_id,
+        p1_0.updated_at 
+    from
+        product_master p1_0 
+    where
+        p1_0.prod_id=?
+2026-08-04T09:12:47.573+05:30 DEBUG 19724 --- [EmartCategoryMaster] [main] org.hibernate.SQL                        : 
+    select
+        p1_0.prod_id,
+        p1_0.brand,
+        p1_0.cardholder_price,
+        p1_0.cash_required,
+        p1_0.catmaster_id,
+        p1_0.created_at,
+        p1_0.display_type,
+        p1_0.prod_long_desc,
+        p1_0.mrp_price,
+        p1_0.offer_type,
+        p1_0.on_sale,
+        p1_0.points_required,
+        p1_0.points_to_be_redeemed,
+        p1_0.prod_image_path,
+        p1_0.prod_name,
+        p1_0.sale_end_date,
+        p1_0.sale_price,
+        p1_0.prod_short_desc,
+        p1_0.status,
+        p1_0.stock,
+        p1_0.subcat_master_id,
+        p1_0.updated_at 
+    from
+        product_master p1_0 
+    where
+        p1_0.prod_id=?
+2026-08-04T09:12:47.580+05:30 DEBUG 19724 --- [EmartCategoryMaster] [main] org.hibernate.SQL                        : 
+    select
+        p1_0.prod_id,
+        p1_0.brand,
+        p1_0.cardholder_price,
+        p1_0.cash_required,
+        p1_0.catmaster_id,
+        p1_0.created_at,
+        p1_0.display_type,
+        p1_0.prod_long_desc,
+        p1_0.mrp_price,
+        p1_0.offer_type,
+        p1_0.on_sale,
+        p1_0.points_required,
+        p1_0.points_to_be_redeemed,
+        p1_0.prod_image_path,
+        p1_0.prod_name,
+        p1_0.sale_end_date,
+        p1_0.sale_price,
+        p1_0.prod_short_desc,
+        p1_0.status,
+        p1_0.stock,
+        p1_0.subcat_master_id,
+        p1_0.updated_at 
+    from
+        product_master p1_0 
+    where
+        p1_0.prod_id=?
+2026-08-04T09:12:47.586+05:30 DEBUG 19724 --- [EmartCategoryMaster] [main] org.hibernate.SQL                        : 
+    select
+        p1_0.prod_id,
+        p1_0.brand,
+        p1_0.cardholder_price,
+        p1_0.cash_required,
+        p1_0.catmaster_id,
+        p1_0.created_at,
+        p1_0.display_type,
+        p1_0.prod_long_desc,
+        p1_0.mrp_price,
+        p1_0.offer_type,
+        p1_0.on_sale,
+        p1_0.points_required,
+        p1_0.points_to_be_redeemed,
+        p1_0.prod_image_path,
+        p1_0.prod_name,
+        p1_0.sale_end_date,
+        p1_0.sale_price,
+        p1_0.prod_short_desc,
+        p1_0.status,
+        p1_0.stock,
+        p1_0.subcat_master_id,
+        p1_0.updated_at 
+    from
+        product_master p1_0 
+    where
+        p1_0.prod_id=?
+2026-08-04T09:12:47.590+05:30 DEBUG 19724 --- [EmartCategoryMaster] [main] org.hibernate.SQL                        : 
+    select
+        p1_0.prod_id,
+        p1_0.brand,
+        p1_0.cardholder_price,
+        p1_0.cash_required,
+        p1_0.catmaster_id,
+        p1_0.created_at,
+        p1_0.display_type,
+        p1_0.prod_long_desc,
+        p1_0.mrp_price,
+        p1_0.offer_type,
+        p1_0.on_sale,
+        p1_0.points_required,
+        p1_0.points_to_be_redeemed,
+        p1_0.prod_image_path,
+        p1_0.prod_name,
+        p1_0.sale_end_date,
+        p1_0.sale_price,
+        p1_0.prod_short_desc,
+        p1_0.status,
+        p1_0.stock,
+        p1_0.subcat_master_id,
+        p1_0.updated_at 
+    from
+        product_master p1_0 
+    where
+        p1_0.prod_id=?
+2026-08-04T09:12:47.597+05:30 DEBUG 19724 --- [EmartCategoryMaster] [main] org.hibernate.SQL                        : 
+    select
+        p1_0.prod_id,
+        p1_0.brand,
+        p1_0.cardholder_price,
+        p1_0.cash_required,
+        p1_0.catmaster_id,
+        p1_0.created_at,
+        p1_0.display_type,
+        p1_0.prod_long_desc,
+        p1_0.mrp_price,
+        p1_0.offer_type,
+        p1_0.on_sale,
+        p1_0.points_required,
+        p1_0.points_to_be_redeemed,
+        p1_0.prod_image_path,
+        p1_0.prod_name,
+        p1_0.sale_end_date,
+        p1_0.sale_price,
+        p1_0.prod_short_desc,
+        p1_0.status,
+        p1_0.stock,
+        p1_0.subcat_master_id,
+        p1_0.updated_at 
+    from
+        product_master p1_0 
+    where
+        p1_0.prod_id=?
+2026-08-04T09:12:47.615+05:30  INFO 19724 --- [EmartCategoryMaster] [main] c.emart.config.OfferTypeBackfillRunner   : OfferTypeBackfillRunner: classified the eMCard offer on 13 product(s) that predate the offer_type column.
+2026-08-04T09:12:47.704+05:30 DEBUG 19724 --- [EmartCategoryMaster] [main] org.hibernate.SQL                        : 
+    select
+        * 
+    from
+        product_master 
+    where
+        on_sale = true 
+        and status = true 
+        and sale_end_date is not null 
+        and sale_end_date > current_timestamp 
+    order by
+        rand() 
+    limit
+        1
+2026-08-04T09:12:47.738+05:30 DEBUG 19724 --- [EmartCategoryMaster] [main] org.hibernate.SQL                        : 
+    select
+        p1_0.prod_id,
+        p1_0.brand,
+        p1_0.cardholder_price,
+        p1_0.cash_required,
+        p1_0.catmaster_id,
+        p1_0.created_at,
+        p1_0.display_type,
+        p1_0.prod_long_desc,
+        p1_0.mrp_price,
+        p1_0.offer_type,
+        p1_0.on_sale,
+        p1_0.points_required,
+        p1_0.points_to_be_redeemed,
+        p1_0.prod_image_path,
+        p1_0.prod_name,
+        p1_0.sale_end_date,
+        p1_0.sale_price,
+        p1_0.prod_short_desc,
+        p1_0.status,
+        p1_0.stock,
+        p1_0.subcat_master_id,
+        p1_0.updated_at 
+    from
+        product_master p1_0
+2026-08-04T09:12:47.768+05:30 DEBUG 19724 --- [EmartCategoryMaster] [main] org.hibernate.SQL                        : 
+    select
+        p1_0.prod_id,
+        p1_0.brand,
+        p1_0.cardholder_price,
+        p1_0.cash_required,
+        p1_0.catmaster_id,
+        p1_0.created_at,
+        p1_0.display_type,
+        p1_0.prod_long_desc,
+        p1_0.mrp_price,
+        p1_0.offer_type,
+        p1_0.on_sale,
+        p1_0.points_required,
+        p1_0.points_to_be_redeemed,
+        p1_0.prod_image_path,
+        p1_0.prod_name,
+        p1_0.sale_end_date,
+        p1_0.sale_price,
+        p1_0.prod_short_desc,
+        p1_0.status,
+        p1_0.stock,
+        p1_0.subcat_master_id,
+        p1_0.updated_at 
+    from
+        product_master p1_0
+2026-08-04T09:13:03.381+05:30  INFO 19724 --- [EmartCategoryMaster] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-08-04T09:13:03.404+05:30  INFO 19724 --- [EmartCategoryMaster] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-08-04T09:13:03.417+05:30  INFO 19724 --- [EmartCategoryMaster] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-04T09:13:03.430+05:30  INFO 19724 --- [EmartCategoryMaster] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-08-04T09:13:03.473+05:30  INFO 19724 --- [EmartCategoryMaster] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

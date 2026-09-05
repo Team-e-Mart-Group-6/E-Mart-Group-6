@@ -1,0 +1,18 @@
+FROM eclipse-temurin:17-jre
+
+WORKDIR /app
+
+COPY EmartCategoryMaster-0.0.1-SNAPSHOT.jar app.jar
+
+# The image is where the "docker" profile belongs - NOT in
+# application.properties, which now defaults to "dev" so a run from the
+# IDE still finds MySQL on localhost. This profile points the datasource
+# at the database CONTAINER (host "mysql" by default); override DB_HOST /
+# DB_URL / DB_USERNAME / DB_PASSWORD at run time to match your setup:
+#
+#   docker run -e DB_HOST=my-mysql -e DB_PASSWORD=secret -p 8080:8080 emart-backend
+ENV SPRING_PROFILES_ACTIVE=docker
+
+EXPOSE 8080
+
+ENTRYPOINT ["java","-jar","app.jar"]
